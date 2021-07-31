@@ -35,8 +35,7 @@ export class Challenge {
   @Column()
   type: string;
 
-  @Column()
-  taskId: number;
+  
   @ManyToOne(() => Task, (task) => task.challenges)
   @JoinColumn()
   task: Task;

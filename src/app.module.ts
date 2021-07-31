@@ -7,7 +7,6 @@ import { TaskModule } from './Logic/task/task.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot(),ChallengeModule , TaskModule],
-  controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}
